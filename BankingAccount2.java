@@ -32,17 +32,16 @@ public class BankingAccount2 {
 			System.out.println("Insufficient Balance");
 			}
 			System.out.println("Balance: "+ balance);
-			System.out.println("exit");
-		break;
+			
+		
 		case 2:
 			System.out.println("Enter money to be deposited");
 			deposit = scan.nextInt();
 			balance = balance + deposit;
 			System.out.println("Your money has been successfully deposited");
 			System.out.println("Balance: "+ balance);
-			
-			withdraw = scan.nextInt();
 			System.out.println("How much would you like to take out:");
+			withdraw = scan.nextInt();
 		if(balance>=withdraw)
 			{
 			balance = balance - withdraw;
@@ -53,13 +52,13 @@ public class BankingAccount2 {
 			System.out.println("Insufficient Balance");
 			}
 			System.out.println("Balance: "+ balance);
-			break;
-		case 3:
-			System.exit(0);
-			System.out.println("Thanks for using leah's ATM!");
 			
+		case 3:
+			
+			System.out.println("Thanks for using leah's ATM!");
+			break;
 		}
-		while(Choice!='3');		
+			
 		
 	}
 		
